@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEPITE</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+<!-- baniere logo -->
+     <div id="parent0">
+        <div id="baniereLogo1">
+            <a href="index.ejs">PEPITE</a>
+        </div>
+        <div id="baniereLogo2"> 
+            <div class="dropdown">
+                Need Help 
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="#">Terms and conditions</a>
+                    <a href="#">Track my package</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                    <a href="#"><i class="fa fa-user profil"></i></a> 
+                    <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="#">LogIn</a>
+                    <a href="#">LogOut</a>
+                </div>
+            </div>
+            <a href="#"><i class="fa fa-shopping-cart cart"></i></a>   
+        </div>
+    </div>   
+
+<!-- baniere logo end -->
+            
+<!-- baniere pub -->
+    <div id="BanierePubParent">
+
+        <div id= "PubEnfant1">
+        <h1>I support my neighborhood merchants while buying online !</h1>
+        </div>
+
+        <div id="PubEnfant2">
+            <div id="PEA">
+                <div class= "neighbourhood">
+                    <label><h1> Neighbourhood </h1></label>
+                </div>
+                <div class= "neighbourhood2">
+                    <select choose = "choose your neigborhood">
+                        <option value=" 0"> choose your neigborhood</option>
+                        <option value="1">All</option>
+                        <option value="2">DownTown:</option>
+                        <option value="3">The Annex</option>
+                        <option value="4">Cabbagetown</option>
+                        <option value="5">Chinatown</option>
+                        <option value="6">Church and Wellesley</option>
+                        <option value="7">Distillery District</option>
+                        <option value="8">The Financial District</option>
+                        <option value="9">Harbord Village</option>
+                        <option value="10">Kensington Market</option>
+                        <option value="11">Queen Street West</option>
+                        <option value="12">Regents Park</option>
+                        <option value="13">University of Toronto </option>
+                        <option value="14">Yorkville</option>
+                        <option value="15">East End:</option>
+                        <option value="16">The Beaches</option>
+                        <option value="17">Gerrard Street East</option>
+                        <option value="18">Leslieville</option>
+                        <option value="19">Greektown</option>
+                        <option value="20">Port Lands</option>
+                        <option value="21">North End:</option>
+                        <option value="22">Casa Loma</option>
+                        <option value="23">Forest Hill</option>
+                        <option value="24">Midtown</option>
+                        <option value="25">Rosedale</option>
+                        <option value="26">West End:</option>
+                        <option value="27">Little Italy</option>
+                        <option value="28">Parkdale</option>
+                        <option value="29">Roncesvalles</option>
+                        <option value="30">Bloor West Village</option>
+                        <option value="31">High Park</option>
+                        <option value="32">The Junction</option>
+                        <option value="33">Corso Italia</option>
+
+                    </select>
+                </div>
+            </div>
+            <div id="PEA">
+                <div class= "category">
+                    <label><h1>Category</h1></label>
+                </div>
+                <div class= "category2">
+                    <select choose = "choose your Catégory">
+                        <option value="0C">choose your category</option>
+                        <option value="1C">All</option>
+                        <option value="2C">Collectibles</option>
+                        <option value="3C">Baby</option>
+                        <option value="4C">Toys & Hobbies</option>
+                        <option value="5C">DVDs,Movies,Video & Games</option>
+                        <option value="6C">Music</option>
+                        <option value="7C">Clothing, Shoes & Accessories</option>
+                        <option value="8C">Home & Garden</option>
+                        <option value="9C">Jewellery & Watches</option>
+                        <option value="10C">Antiques</option>
+                        <option value="11C">Art</option>
+                        <option value="12C">Musical Instruments & Gear</option>
+                        <option value="13CA">Sporting Goods</option>
+                        <option value="14CA">Health & Beauty</option>
+                        <option value="15CA">Books</option>
+                        <option value="16CA">Pet Supplies</option>
+                    </select>
+                </div> 
+            </div>   
+        </div>
+    </div>
+<!-- baniere pub end -->
+<!-- section choose your store -->
+<div id="parent">
+  <div id="cdb">
+
+      <% for (let x of VisuelMag) { %>
+        <div id= "boite">
+          <a href="<%=x.id%>">
+          <span class="img">
+              <img src="<%= x.photo %>">
+          </span>
+          <span class= "nom"><%=x.magasin%></span> 
+          <span class="descriptif"><%=x.neighborhood%></span>
+        </div></a>
+      <% } %>
+
+  </div>    
+</div>
+<!-- section choose your store end -->
+
+
+<!-- baniere Nous rejoindre -->
+<div id="contain">
+<h1><div id= "TITRE"><span id="BNR">PARTNERS</span></div></h1>
+
+<div id="Bnr">A solution to develop your business</div>
+<div id= "rejoindre" >
+    <img src="images/thumb-2.png">
+    <a href=""><h1>How to integrate PEPITE</h1></a>
+    <img src="images/malvare.png">
+</div>
+</div>
+
+<!-- baniere 4 Avantages -->
+<div id= "baniereAvantage">
+    <div>
+        <a href="">
+        <p class= "carré">BUY LOCAL
+        <img src="images/star.png"></p>
+        </a>
+    </div>
+    <div>
+        <a href="">
+        <p class= "carré">ON LINE</br> PURCHASE
+        <img src="images/cleander.png"></p>
+        </a>
+    </div>
+    <div>
+        <a href="">
+        <p class= "carré">CHECK BY US
+        <img src="images/stamp.png"></p>
+        </a>    
+    </div>
+    <div>
+        <a href="">
+        <p class= "carré">DELIVERY IN FRONT</br> OF YOUR PORSH
+        <img src="images/thumb.png"></p>
+        </a>
+    </div>
+
+ 
+</div>
+
+
+<div id= "baniereCondition">
+    <p>condition generales</p>
+    <p>partener</p>
+    <p>questions</p>
+</div>
+
+
+<footer id="footerBaniere">
+    copyright 2020
+
+</footer>
+    
+
+
+    <script src="javascripts"></script> 
+</body>
+</html>
