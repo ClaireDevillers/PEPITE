@@ -6,16 +6,20 @@
     <title>PEPITE</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
  
 <!-- baniere logo -->
-     <div id="parent0">
-        <div id="baniereLogo1">
-            <a href="index.ejs">PEPITE</a>
+<header>
+        <div class="flex">
+            <a href="/">
+            <img id="logo" src="images/logo.png"/>
+            </a>
         </div>
-        <div id="baniereLogo2"> 
-            <div class="dropdown">
+        <nav> 
+            <span class="dropdown">
                 Need Help 
                 <i class="fa fa-caret-down"></i>
                 <div class="dropdown-content">
@@ -23,23 +27,24 @@
                     <a href="#">Track my package</a>
                     <a href="#">Contact us</a>
                 </div>
-            </div>
-            <div class="dropdown">
+            </span>
+            <span class="dropdown">
                     <a href="#"><i class="fa fa-user profil"></i></a> 
                     <i class="fa fa-caret-down"></i>
                 <div class="dropdown-content">
                     <a href="#">LogIn</a>
                     <a href="#">LogOut</a>
                 </div>
-            </div>
+            </span>
+            <span>
             <a href="#"><i class="fa fa-shopping-cart cart"></i></a>   
-        </div>
-    </div>   
-
+            </span>
+        </nav> 
+</header>
 <!-- baniere logo end -->
             
 <!-- baniere pub -->
-    <div id="BanierePubParent">
+    <div id="Baniere">
 
         <div id= "PubEnfant1">
         <h1>I support my neighborhood merchants while buying online !</h1>
@@ -189,7 +194,7 @@
 </div>
 
 
-<footer id="footerBaniere">
+<footer>
     copyright 2020
 
 </footer>
